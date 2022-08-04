@@ -50,7 +50,6 @@ import Property from "./components/Property.vue";
 import algoliasearch from 'algoliasearch/lite';
 import { AisHits,AisInstantSearch, AisSearchBox, AisSortBy, AisMenuSelect } from 'vue-instantsearch/vue3/es';
 
-
 export default {
   data() {
     return {
@@ -65,13 +64,14 @@ export default {
 
 
 <style>
-.ais-MenuSelect {
+.ais-MenuSelect  {
   display: inline;
   padding: 0rem 1rem 1rem 0rem;
   width: calc(25% - 1rem);
 }
+
 .ais-SortBy {
-  float:"right";
+  float:right;
 }
 
 a {
