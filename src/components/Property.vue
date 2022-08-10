@@ -48,10 +48,10 @@
           <hr />
           <ul>
             <li class="str_icons">
-              <span><a href="{{ item.airbnb}}"><img src="/images/airbnb_icon.png" alt="airbnb logo" /></a></span>
-              <span><a href="{{ item.vrbo}}"><img src="/images/vrbo-icon.png" alt="vrbo-icon.png logo" /></a></span>
-              <span><a href="{{ item.hostfully}}"><img src="/images/hostfully.png" alt="hostfully logo" /></a></span>
-              <span><a href="{{ item.video}}" class="youtube" video-item="{{ item.video}}"><img src="/images/youtube.png" alt="youtubee logo" /></a></span>
+              <span><a :href=item.airbnb><img src="/images/airbnb_icon.png" alt="airbnb logo" /></a></span>
+              <span><a :href=item.vrbo><img src="/images/vrbo-icon.png" alt="vrbo-icon.png logo" /></a></span>
+              <span><a :href=item.hostfully><img src="/images/hostfully.png" alt="hostfully logo" /></a></span>
+              <span><a :href=item.video class="youtube" video-item="{{ item.video}}"><img src="/images/youtube.png" alt="youtubee logo" /></a></span>
             </li>
           </ul>
           <div class="notes">

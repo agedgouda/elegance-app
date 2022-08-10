@@ -62,17 +62,16 @@ export default {
 };
 </script>
 
-
 <style>
+.ais-SortBy {
+    float: right;
+}
 .ais-MenuSelect  {
   display: inline;
   padding: 0rem 1rem 1rem 0rem;
   width: calc(25% - 1rem);
 }
 
-.ais-SortBy {
-  float:right;
-}
 
 a {
   font-weight: bold;
