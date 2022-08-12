@@ -21,7 +21,7 @@
               {{ item.email}}
             </p>
           </div>
-          <div class="{{ item.tier}} tier">
+          <div :class= item.tier class="tier">
             {{ item.tier}}
           </div>
           <div class="rating">
