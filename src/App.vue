@@ -40,7 +40,8 @@ import Property from "./components/Property.vue";
       <Property v-bind="{ item }"></Property> 
       </template>
     </ais-hits>
-    
+    <ais-pagination />
+
   </ais-instant-search>
 
   </div>
@@ -48,7 +49,7 @@ import Property from "./components/Property.vue";
 
 <script>
 import algoliasearch from 'algoliasearch/lite';
-import { AisHits,AisInstantSearch, AisSearchBox, AisSortBy, AisMenuSelect } from 'vue-instantsearch/vue3/es';
+import { AisHits,AisInstantSearch, AisSearchBox, AisSortBy, AisMenuSelect,AisPagination } from 'vue-instantsearch/vue3/es';
 
 export default {
   data() {
@@ -70,6 +71,11 @@ export default {
   display: inline;
   padding: 0rem 1rem 1rem 0rem;
   width: calc(25% - 1rem);
+}
+
+.ais-Pagination-list  {
+  margin: 2rem auto;
+  text-align: center;
 }
 
 
