@@ -5,6 +5,7 @@
             <h2 class="prop_name>">
               <a :href="'https://platform.hostfully.com/property_edit.jsp?uid='+item.hostfully_id">{{ item.name}}</a>
             </h2>
+            <div class="calendar"><a :href="'https://platform.hostfully.com/agency_calendar.jsp?puid='+item.hostfully_id"><img src="/images/calendar_icon.png" alt="calendar icon"/></a></div>
             <p>{{ item.address}}<br />
             {{ item.city}}, {{ item.state}} {{ item.zip}}
             </p>
@@ -41,10 +42,10 @@
           </ul>
           <hr />
           <span class="tags" v-if="item.pets">Pets</span> 
-          <span class="tags" v-if="item.insurance !=='false'">Insurance </span>
-          <span class="tags" v-if="item.exterminator !=='false'">Exterminator </span>
-          <span class="tags" v-if="item.consumables !=='false'">Consumables</span>
-          <span class="tags" v-if="item.lawn !=='false'">Lawn</span>
+          <span class="tags" v-if="item.insurance ==='true'">Insurance </span>
+          <span class="tags" v-if="item.exterminator ==='true'">Exterminator </span>
+          <span class="tags" v-if="item.consumables ==='true'">Consumables</span>
+          <span class="tags" v-if="item.lawn ==='true'">Lawn</span>
           <hr />
           <ul>
             <li class="str_icons">

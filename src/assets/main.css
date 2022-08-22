@@ -141,6 +141,9 @@ div.property_name h2 a{
     color: #222;
     text-decoration: none;
 }
+div.property_name h2{
+  display: inline;
+}
 div.property_name h2 a:hover{
     text-decoration: underline;
 }
@@ -151,6 +154,15 @@ div.property_name p{
 }
 div.property_name, div.property_name h2, h4{
   margin: 2px 0;
+}
+div.calendar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+div.calendar a,div.calendar img{
+  border:0;
+  border-radius: 0;
 }
 .tier, .rating{
 padding: 4px;
