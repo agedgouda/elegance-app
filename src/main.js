@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import InstantSearch from 'vue-instantsearch/vue3/es';
-import router from '@/router/index'
 import "@/assets/main.css";
 import { msalPlugin } from "./plugins/msalPlugin";
 import { msalInstance,loginRequest } from "./authConfig";
@@ -23,6 +22,5 @@ msalInstance.addEventCallback((event) => {
 
 const app = createApp(App)
     .use(InstantSearch)
-    .use(router)
     .use(msalPlugin, msalInstance,loginRequest)
     .mount('#app')
