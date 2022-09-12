@@ -7,6 +7,7 @@
         src="/images/elegance-rent-logo.300a5f44.png"
       />
     </div>
+
     <PropertyList></PropertyList>>
   </template>
   
@@ -18,6 +19,8 @@
    
   const accounts = msalInstance.getAllAccounts();
   console.log("here ",accounts)
+  console.log(import.meta.env.DEV)
+  console.log(import.meta.env.PROD)
   if (accounts.length === 0) {
       instance.loginRedirect();
   }

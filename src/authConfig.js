@@ -1,11 +1,24 @@
 import { LogLevel,PublicClientApplication } from '@azure/msal-browser';
 
+if(import.meta.env.DEV) {
+    var clientId = 'd7afee0d-250e-4382-8a18-7fddcb8cccd6';
+    var redirectUri = 'http://localhost:5173/';
+    var postLogoutRedirectUri = 'http://localhost:5173/';
+}
+if(import.meta.env.PROD) {
+
+    var clientId = 'f47d7bc5-461a-4bfd-b5a2-d18485a98b8e';
+    var redirectUri = 'https://db.isthisright.com/elegance/';
+    var postLogoutRedirectUri = 'https://db.isthisright.com/elegance/';
+    console.log(clientId);
+}
+
 // Config object to be passed to Msal on creation
 export const msalConfig = {
   auth: {
-    clientId: 'd7afee0d-250e-4382-8a18-7fddcb8cccd6',
-    redirectUri: 'http://localhost:5173/', // Must be registered as a SPA redirectURI on your app registration
-    postLogoutRedirectUri: 'http://localhost:5173/' // Must be registered as a SPA redirectURI on your app registration
+    clientId: clientId,
+    redirectUri: redirectUri, // Must be registered as a SPA redirectURI on your app registration
+    postLogoutRedirectUri: postLogoutRedirectUri // Must be registered as a SPA redirectURI on your app registration
   },
   cache: {
     cacheLocation: 'localStorage'
